@@ -32,7 +32,7 @@ const LandingPage = () => {
           </h2>
 
           {/* Button Link to Sign Up */}
-          <div className="flex items-center justify-center gap-5">
+          <div className="flex flex-col items-center justify-center gap-3">
             <Link
               href="/register"
               className="mt-5 py-2 px-6 bg-blue-500 text-sm text-white font-semibold rounded-full hover:bg-blue-600 transition">
@@ -40,7 +40,7 @@ const LandingPage = () => {
             </Link>
             <Link
               href="/login"
-              className="mt-5 py-2 px-6 bg-blue-500 text-sm text-white font-semibold rounded-full hover:bg-blue-600 transition lg:hidden">
+              className=" py-2 px-6 bg-blue-500 text-sm text-white font-semibold rounded-full hover:bg-blue-600 transition lg:hidden">
               Already a member?
             </Link>
           </div>
