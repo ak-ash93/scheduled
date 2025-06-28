@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sceduled",
+  title: "SKeduled",
   description:
-    "Sceduled is a modern scheduling platform that lets you book meetings, manage availability, and sync with Google Calendar. Built with Next.js 15, React 19, and Tailwind CSS for fast, responsive performance.",
+    "SKeduled is a modern scheduling platform that lets you book meetings, manage availability, and sync with Google Calendar. Built with Next.js 15, React 19, and Tailwind CSS for fast, responsive performance.",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning={true}>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           {children}
