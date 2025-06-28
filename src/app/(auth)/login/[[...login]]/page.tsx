@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import { calendar } from "../../../../../public/assets";
+import { calendar } from "@/assets/index";
 import { SignIn } from "@clerk/nextjs";
 import gsap from "gsap";
 

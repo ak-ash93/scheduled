@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { calendar } from "../../../../../public/assets";
+import { calendar } from "@/assets/index";
 import { SignUp } from "@clerk/nextjs";
 
 const RegisterPage = () => {
