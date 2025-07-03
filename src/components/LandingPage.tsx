@@ -28,7 +28,7 @@ const LandingPage = () => {
 
           <h2 className="text-gray-500 tracking-wide px-6 max-w-xl">
             Join us to plan ahead, stay on top of everything, and get smart
-            reminders—making your day simpler and stress-free.
+            reminders making your day simpler and stress-free.
           </h2>
 
           {/* Button Link to Sign Up */}
