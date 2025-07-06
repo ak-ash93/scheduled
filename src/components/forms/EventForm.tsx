@@ -213,6 +213,7 @@ const EventForm = ({
                 {/* 1. Red destructive button – opens the dialog */}
                 <AlertDialogTrigger asChild>
                   <Button
+                    className="cursor-pointer"
                     variant="destructive"
                     disabled={isDeletePending || form.formState.isSubmitting}>
                     Delete
@@ -272,7 +273,7 @@ const EventForm = ({
             {/* ----------------------------- SAVE ------------------------------*/}
             <Button
               size="md"
-              className="bg-blue-400 text-white hover:bg-blue-500"
+              className="bg-blue-400 text-white hover:bg-blue-500 cursor-pointer"
               disabled={isDeletePending || form.formState.isSubmitting}
               type="submit">
               Save

@@ -131,3 +131,14 @@ export const getEvents = async (clerkUserId: string): Promise<EventRow[]> => {
   });
   return events;
 };
+
+export const editEvent = async (
+  userId: string,
+  eventId: string
+): Promise<EventRow | undefined> => {
+  const event = await db.query.EventsTable.findFirst({
+    where: ({ id, clerkUserId }, { and, eq }) =>
+      and(eq(id, eventId), eq(clerkUserId, userId)),
+  });
+  return event ?? undefined;
+};
