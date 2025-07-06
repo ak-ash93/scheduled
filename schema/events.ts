@@ -4,7 +4,7 @@ export const eventsFormSchema = z.object({
   name: z.string().min(5, "Required"),
   description: z.string().optional(),
   isActive: z.boolean(),
-  durationInMin: z.coerce
+  duration: z.coerce
     .number()
     .int()
     .positive("Duration must be greater that 0")

@@ -8,6 +8,13 @@
       "when": 1751185697275,
       "tag": "0000_great_dragon_man",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1751700618412,
+      "tag": "0001_foamy_dazzler",
+      "breakpoints": true
     }
   ]
 }

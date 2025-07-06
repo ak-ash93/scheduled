@@ -38,9 +38,9 @@ export const EventsTable = pgTable(
   {
     id: uuid("id").primaryKey().defaultRandom(),
     name: text("name").notNull(),
-    description: text("description").notNull(),
+    description: text("description"),
     duration: integer("duration").notNull(),
-    clerkUserId: text("clerkUserId").notNull().unique(),
+    clerkUserId: text("clerkUserId").notNull(),
     isActive: boolean("isActive").notNull().default(true),
     createdAt,
     updatedAt,
